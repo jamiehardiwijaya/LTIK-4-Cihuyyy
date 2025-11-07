@@ -1,4 +1,3 @@
-# fitur inventory bisa ditambah, bisa diedit, bisa dihapus dan ada menu melihat semua item
 class Inventory:
     def __init__(self):
         self.items = {}
@@ -31,7 +30,7 @@ class Inventory:
             print("Current Inventory:")
             for item_name, quantity in self.items.items():
                 print(f"{item_name}: {quantity}")
-# contoh penggunaan kasih menu mau tambah edit hapus atau lihat
+
 def main():
     inventory = Inventory()
     while True:
