@@ -33,7 +33,7 @@ def generate_waste_report(waste_data):
 if __name__ == "__main__":
     sample_waste_data = [10.5, 12.0, 9.8, 11.2, 13.5]
     report = generate_waste_report(sample_waste_data)
-    print("Laporan Statistik Limbah Makanan:")
-    print(f"Rata-rata Limbah: {report['average_waste']} kg")
-    print(f"Total Limbah: {report['total_waste']} kg")
-    print(f"Tren Limbah: {report['waste_trend']}")
+    print("Laporan Statistik Sampah Makanan:")
+    print(f"Rata-rata Sampah: {report['average_waste']} kg")
+    print(f"Total Sampah: {report['total_waste']} kg")
+    print(f"Tren Sampah: {report['waste_trend']}")
