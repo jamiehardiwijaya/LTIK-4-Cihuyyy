@@ -1,6 +1,7 @@
 import datetime
 import json
 
+#fungsi manajer makanan
 class ManajerMakanan:
     def __init__(self):
         self.makanan = []
