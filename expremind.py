@@ -27,7 +27,7 @@ class ManajerMakanan:
         except:
             print("Format tanggal salah!")
     
-    def cek_kadaluarsa(self):
+    def cek_kadaluarsa(self): #menampilkan waktu kadaluarsa
         hari_ini = datetime.date.today()
         ada_pengingat = False
         
