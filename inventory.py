@@ -1,4 +1,3 @@
-# fitur inventory bisa ditambah, bisa diedit, bisa dihapus dan ada menu melihat semua item
 class Inventory:
     def __init__(self):
         self.items = {}
@@ -8,34 +7,34 @@ class Inventory:
             self.items[item_name] += quantity
         else:
             self.items[item_name] = quantity
-        print(f"Added {quantity} of {item_name}.")
+        print(f"Tambah {quantity} {item_name}.")
 
     def edit_item(self, item_name, new_quantity):
         if item_name in self.items:
             self.items[item_name] = new_quantity
-            print(f"Updated {item_name} to {new_quantity}.")
+            print(f"Perbarui {item_name} menjadi {new_quantity}.")
         else:
-            print(f"Item {item_name} not found in inventory.")
+            print(f"Item {item_name} tidak ditemukan dalam inventaris.")
 
     def delete_item(self, item_name):
         if item_name in self.items:
             del self.items[item_name]
-            print(f"Deleted {item_name} from inventory.")
+            print(f"Hapus {item_name} dari inventaris.")
         else:
-            print(f"Item {item_name} not found in inventory.")
+            print(f"Item {item_name} tidak ditemukan dalam inventaris.")
 
     def view_items(self):
         if not self.items:
-            print("Inventory is empty.")
+            print("Inventaris kosong.")
         else:
-            print("Current Inventory:")
+            print("Inventaris Saat Ini:")
             for item_name, quantity in self.items.items():
                 print(f"{item_name}: {quantity}")
-# contoh penggunaan kasih menu mau tambah edit hapus atau lihat
+
 def main():
     inventory = Inventory()
     while True:
-        print("\nInventory Menu:")
+        print("\nMenu Inventaris:")
         print("1. Tambah Item")
         print("2. Edit Item")
         print("3. Hapus Item")
